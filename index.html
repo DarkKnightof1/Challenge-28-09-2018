@@ -13,17 +13,51 @@
 </head>
 <body>
 <!-- Hier komt de content -->
-
+<i class="fas fa-sign-in-alt"></i>
 <nav>
+
+    <div class="tabs">
+        <button class="tablinks" onclick="opentabs(event, 'tabmenu')"><i class="fas fa-align-justify"></i></button>
+    </div>
+    <div id="tabmenu" class="tabcontent"> <span onclick="this.parentElement.style.display='none'" class="tablinks">x</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Memory</a></li>
+            <li> <a href="">Getallenrij</a></li>
+            <li><a href="">Picturepuzzle</a></li>
+        </ul>
+    </div>
+    <script>
+        function opentabs(evt, tabchoice) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabchoice).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <div class="navbar">
     <a href="index.html">Home</a>
     <a href="">Memory</a>
     <a href="">Getallenrij</a>
     <a href="">Picturepuzzle</a>
-    <i class="fas fa-sign-in-alt"></i>
+    </div>
+
 </nav>
 <section>
-<img src="pics/Meryl%20Streep%201.jpg">
+    <div class="lol">
+        <img src="pics/Meryl%20Streep%203.jpg">
+    </div>
+    <div class="example">
+<img src="pics/Meryl%20Streep%201.jpg" style="float: left">
 <img src="pics/Meryl%20Streep%202.jpg" style="float: right">
+    </div>
 </section>
 
     <h3>Meryl  Streep</h3>
@@ -70,6 +104,8 @@
             <h4>Dit is de footer.</h4></footer></th>
     </tr>
 </table>
+
 </body>
+
 
 </html>

@@ -9,9 +9,11 @@ table {
     width: 100%;
 }
 i {
+    padding-top: 10px;
     color: white;
     float: right;
     padding-right: 20px;
+    font-size: 40px;
 }
 th {
     color: white;
@@ -48,7 +50,7 @@ h3 {
     color: #5f2e56;
 }
 img {
-    width: 50%;
+    width: 49%;
     height: auto;
 }
 section {
@@ -61,4 +63,67 @@ iframe {
 }
 footer {
     text-align: left;
+}
+.tabs {
+    width: 20px;
+}
+.tablinks {
+    background-color: #974989;
+    padding: 5px;
+}
+.tabs button {
+    background-color: #974989;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 25px;
+}
+.tabs button:hover {
+    background-color: white;
+}
+.tabs button.active {
+    background-color: #974989;
+}
+.tabcontent {
+    display: none;
+    border-top: none;
+    text-decoration: none;
+}
+li {
+    padding: 5px;
+}
+@media screen and (max-width: 600px) {
+    div.example {
+        display: none;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    section {
+        width: auto;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+div.navbar {
+    display: none;
+}
+
+}
+nav {
+    padding-bottom: 5px;
+    padding-top: 55px;
+}
+@media screen and (min-width: 600px) {
+    div.lol {
+        display: none;
+    }
+    div.tabs {
+        display: none;
+    }
+    div.tabcontent {
+        display: none;
+    }
 }
